@@ -2,9 +2,16 @@
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import * as TestUtils from 'react-addons-test-utils';
-import { shallow } from 'enzyme';
+import * as TestUtils from 'react-dom/test-utils';
+
 import { Hello } from '../App/src/components/Hello'
+
+// For Enzyme
+import { configure } from 'enzyme'
+import { shallow } from 'enzyme';
+import  * as Adapter  from 'enzyme-adapter-react-16'
+configure({ adapter: new Adapter() });
+
 
 test('Verify Hello message in react component using test utils', () => {
     // Render a div with message in the document

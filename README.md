@@ -40,3 +40,5 @@ Verify the set up by running index.html or Index.cshtml Asp.Net View
 ## Verify Unit test setup
 Create HelloTests.tsx in Tests folder and write test for Hello Component
 Verify Tests by executing  `npm test`
+
+## React 16 upgrade is present in develop branch
