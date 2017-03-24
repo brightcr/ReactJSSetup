@@ -29,5 +29,14 @@ We haven't integrated ReactJS yet. First we are verifying Typescript and Webpack
 `npm install -S react react-dom @types/react @types/react-dom`
 
 ## Set up unit testing with jest
-'npm install -D jest react-addons-test-utils enzyme
-Update Jest configuration in package.json and add preprocessor.js to transpile jest unit tests in typescript to JS.
+`npm install -D jest react-addons-test-utils enzyme`
+Update Jest configuration in package.json and add preprocessor.js to transpile jest unit tests in typescript to JS
+
+## Create React Component
+Add Hello.tsx in App/Component folder. Create Index.tsx in App folder to render Hello component
+Run Webpack command - `Webpack`
+Verify the set up by running index.html or Index.cshtml Asp.Net View
+
+## Verify Unit test setup
+Create HelloTests.tsx in Tests folder and write test for Hello Component
+Verify Tests by executing  `npm test`
