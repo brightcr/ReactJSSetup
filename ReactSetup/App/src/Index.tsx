@@ -7,6 +7,6 @@ import * as ReactDOM from "react-dom";
 import { Hello } from "./components/Hello";
 
 ReactDOM.render(
-    <Hello Message ="TypeScript, React and Webpack setup is successful." />,
+    <Hello Message1="TypeScript" Message2="React" Message3="Webpack" SuccessMessage="setup is successful."/>,
     document.getElementById("myapp")
 );
