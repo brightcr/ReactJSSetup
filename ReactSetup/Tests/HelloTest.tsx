@@ -10,18 +10,19 @@ test('Verify Hello message in react component using test utils', () => {
     // Render a div with message in the document
     const helloElement =
         TestUtils.renderIntoDocument(
-            <Hello Message="Test Message" />) as React.Component<Hello, null>;
+            <Hello Message1="Test Message" Message2="" Message3="" SuccessMessage="Success" />) as React.Component<Hello, null>;
     const msgNode = ReactDOM.findDOMNode(helloElement);
 
     // Verify that message is rendered correctly
     expect(msgNode.textContent).toContain('Test Message');
+    expect(msgNode.textContent).toContain('Success');
 });
 
 
 test('Verify Hello message in react component using enzyme shallow', () => {
     // Render a div with message in the document
     const helloElement = shallow(
-        <Hello Message="Test Message" />
+        <Hello Message1="Test Message" Message2="" Message3="" SuccessMessage="" />
     );
 
     // Verify that message is rendered correctly
